@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-button (click)="back()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Contato</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-card>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-icon name="mail"></ion-icon>
+          <ion-label>contato@exemplo.com</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="call"></ion-icon>
+          <ion-label>+55 11 1234-5678</ion-label>
+        </ion-item>
+        <ion-item href="https://www.facebook.com/exemplo" target="_blank">
+          <ion-icon name="logo-facebook"></ion-icon>
+          <ion-label>Facebook</ion-label>
+        </ion-item>
+        <ion-item href="https://www.instagram.com/exemplo" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+          <ion-label>Instagram</ion-label>
+        </ion-item>
+        <ion-item href="https://www.twitter.com/exemplo" target="_blank">
+          <ion-icon name="logo-twitter"></ion-icon>
+          <ion-label>Twitter</ion-label>
+        </ion-item>
+        <div class="ion-padding">
+          <ion-note>Horário: </ion-note>
+          <ion-note>Segunda a quinta 8h às 17h |</ion-note>
+          <ion-note>    Sexta e sábado 8h às 16h</ion-note>
+        </div>
+        
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <h3 text-align="center">Ou escreva para gente</h3>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Nome</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Telefone</ion-label>
+        <ion-input type="tel"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Mensagem</ion-label>
+        <ion-textarea rows="3"></ion-textarea>
+      </ion-item>
+      <ion-button color="tertiary"expand="block">Enviar</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+

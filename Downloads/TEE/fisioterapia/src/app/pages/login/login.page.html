@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-title>Login</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-button (click)="back()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-img class="img-login" src="../../../assets/icon/loginpage.png" alt="Medical Image"></ion-img>
+
+  <form>
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="text" [(ngModel)]="email" name="email" ></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input type="password" [(ngModel)]="senha" name="senha" ></ion-input>
+    </ion-item>
+  
+    <ion-button expand="block" color="tertiary" (click)="login(email,senha)">Login</ion-button>
+  </form>
+  
+</ion-content>
+
+
+<ion-footer>
+  {{footer}}
+</ion-footer>

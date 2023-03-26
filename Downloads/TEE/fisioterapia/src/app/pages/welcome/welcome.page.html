@@ -1,0 +1,38 @@
+
+<ion-content [fullscreen]="true">
+
+  <nav>
+    <ion-header>
+      <ion-toolbar color="tertiary">
+        <ion-button routerLink="/" color="tertiary">Home</ion-button>
+        <ion-button routerLink="/servicos" color="tertiary">Tratamentos</ion-button>
+        <ion-button routerLink="/sobre" color="tertiary">Sobre nós</ion-button>
+        <ion-button routerLink="/contato" color="tertiary">Contato</ion-button>
+      </ion-toolbar>
+    </ion-header>
+  </nav>
+  
+  
+    
+
+  <ion-text class="ion-text-center" color="#3171e0">
+    <h2>Clínica de Fisioterapia Veterinária</h2>
+    <h4> Bem vindo! </h4>
+  </ion-text>
+
+
+
+  <img id="dog" src="../../../assets/icon/welcomepage.png">
+
+  <ion-footer>
+    <ion-grid>
+      <ion-row>
+        <ion-col><ion-button (click)="move('login')" expand="block" fill="clear">Login</ion-button></ion-col>
+        <ion-col><ion-button (click)="move('register')" expand="block" fill="clear">Register</ion-button></ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-footer>
+
+
+
+</ion-content>
