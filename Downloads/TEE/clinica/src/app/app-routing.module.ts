@@ -23,6 +23,18 @@ const routes: Routes = [
     path: 'register',
     loadChildren: () => import('./a2/register/register.module').then( m => m.RegisterPageModule)
   },
+  {
+    path: 'form-cadastro-pessoa',
+    loadChildren: () => import('./aula3/form-cadastro-pessoa/form-cadastro-pessoa.module').then( m => m.FormCadastroPessoaPageModule)
+  },
+  {
+    path: 'lista-pessoa',
+    loadChildren: () => import('./aula3/lista-pessoa/lista-pessoa.module').then( m => m.ListaPessoaPageModule)
+  },
+  {
+    path: 'detalhe-pessoa',
+    loadChildren: () => import('./aula3/detalhe-pessoa/detalhe-pessoa.module').then( m => m.DetalhePessoaPageModule)
+  }
 ];
 
 @NgModule({
