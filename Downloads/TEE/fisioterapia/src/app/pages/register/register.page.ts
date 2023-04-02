@@ -99,4 +99,12 @@ export class RegisterPage implements OnInit {
     'Yorkshire',
     'West Highland White Terrier'
   ];
+
+  save(){
+    this.nav.navigateBack('welcome');
+
+  }
+
+  footer = "Designed by Gabriela Cordeiro - GU3015084"
+
 }

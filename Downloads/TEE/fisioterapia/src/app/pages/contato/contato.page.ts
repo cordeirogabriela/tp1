@@ -17,4 +17,12 @@ export class ContatoPage implements OnInit {
   back(){
     this.nav.navigateBack('welcome');
   }
+
+  save(){
+    alert('Obrigada - retornaremos em breve!');
+    this.nav.navigateBack('welcome');
+
+  }
+  footer = "Designed by Gabriela Cordeiro - GU3015084"
+
 }

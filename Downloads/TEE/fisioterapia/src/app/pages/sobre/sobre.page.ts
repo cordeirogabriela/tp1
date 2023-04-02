@@ -17,5 +17,7 @@ export class SobrePage implements OnInit {
     this.nav.navigateBack('welcome');
   }
 
+  footer = "Designed by Gabriela Cordeiro - GU3015084"
+
 
 }

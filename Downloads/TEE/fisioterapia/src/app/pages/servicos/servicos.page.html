@@ -8,6 +8,7 @@
     <ion-title class="ion-text-center">Tratamentos</ion-title>
   </ion-toolbar>
 </ion-header>
+
 <ion-content class="ion-text-justify">
   <ion-card>
     <ion-card-content>  
@@ -17,50 +18,28 @@
 
   <ion-card>
     <ion-card-header>
-      <ion-card-subtitle>Nossas tratamentos</ion-card-subtitle>
+      <ion-card-subtitle>Nossos tratamentos</ion-card-subtitle>
     </ion-card-header>
   
-    <ion-card-content>
-      <ion-list>
-        <ion-item>
-          <ion-label>Massagem terapêutica</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label>Terapia por ondas de choque</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label>Acupuntura</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label>Eletroterapia</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label>Hidroterapia</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label>Fisioterapia respiratória</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label>Exercícios terapêuticos</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label>Tratamento de feridas e lesões cutâneas</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label>Tratamento de problemas ortopédicos</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label>Tratamento de problemas neurológicos</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label>Tratamento pré e pós-operatório</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label>Postura e ergonomia</ion-label>
-        </ion-item>
+    <ion-card-content style="overflow-x: auto;">
+      <ion-list style="white-space: nowrap;">
+        <ion-item>Massagem terapêutica</ion-item>
+        <ion-item>Terapia por ondas de choque</ion-item>
+        <ion-item>Acupuntura</ion-item>
+        <ion-item>Eletroterapia</ion-item>
+        <ion-item>Hidroterapia</ion-item>
+        <ion-item>Fisioterapia respiratória</ion-item>
+        <ion-item>Exercícios terapêuticos</ion-item>
+        <ion-item>Tratamento de feridas e lesões cutâneas</ion-item>
+        <ion-item>Tratamento de problemas ortopédicos</ion-item>
+        <ion-item>Tratamento de problemas neurológicos</ion-item>
+        <ion-item>Tratamento pré e pós-operatório</ion-item>
+        <ion-item>Postura e ergonomia</ion-item>
       </ion-list>
     </ion-card-content>
-  </ion-card>
-  
-
+  </ion-card>  
 </ion-content>
+
+<ion-footer style="display: flex; justify-content: center; align-items: center;">
+  {{footer}}
+</ion-footer>

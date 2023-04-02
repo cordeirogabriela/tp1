@@ -31,5 +31,10 @@ export class LoginPage implements OnInit {
     this.nav.navigateBack('welcome');
   }
 
+  save(){
+    this.nav.navigateBack('welcome');
+
+  }
+
 
 }

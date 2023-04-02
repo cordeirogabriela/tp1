@@ -1,21 +1,32 @@
 
 <ion-content [fullscreen]="true">
 
-  <nav>
-    <ion-header>
-      <ion-toolbar color="tertiary">
-        <ion-button routerLink="/" color="tertiary">Home</ion-button>
+  <ion-menu contentId="main-content">
+    <ion-menu-toggle style="display: flex; flex-direction: column;">
+      <ion-button routerLink="/welcome" color="tertiary">Home</ion-button>
         <ion-button routerLink="/servicos" color="tertiary">Tratamentos</ion-button>
+        <ion-button routerLink="/agendamentos" color="tertiary">Agendamentos</ion-button>
         <ion-button routerLink="/sobre" color="tertiary">Sobre nós</ion-button>
         <ion-button routerLink="/contato" color="tertiary">Contato</ion-button>
+    </ion-menu-toggle>
+      </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar color="tertiary">
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Home</ion-title>
       </ion-toolbar>
     </ion-header>
-  </nav>
-   
+  </div>
+
+ 
 
     
 
   <ion-text class="ion-text-center" color="#3171e0">
+    <h1>Clínica de Fisioterapia &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
     <h2>Clínica de Fisioterapia Veterinária</h2>
     <h4> Bem vindo! </h4>
   </ion-text>
@@ -31,8 +42,12 @@
         <ion-col><ion-button (click)="move('register')" expand="block" fill="clear">Register</ion-button></ion-col>
       </ion-row>
     </ion-grid>
+
   </ion-footer>
 
+  <ion-footer style="display: flex; justify-content: center; align-items: center;">
+    {{footer}}
+  </ion-footer>
 
 
 </ion-content>

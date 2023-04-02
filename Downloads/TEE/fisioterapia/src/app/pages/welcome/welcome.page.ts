@@ -20,4 +20,6 @@ export class WelcomePage implements OnInit {
     this.nav.navigateForward(toPage);
   }
 
+  footer = "Designed by Gabriela Cordeiro - GU3015084"
+
 }

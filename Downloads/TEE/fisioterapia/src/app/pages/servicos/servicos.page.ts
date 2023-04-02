@@ -17,4 +17,7 @@ export class ServicosPage implements OnInit {
   back(){
     this.nav.navigateBack('welcome');
   }
+
+  footer = "Designed by Gabriela Cordeiro - GU3015084"
+
 }
